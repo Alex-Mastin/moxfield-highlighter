@@ -1,0 +1,22 @@
+{
+  "name": "Moxfield Highlighter",
+  "description": "Adds additional functionality to the highlighter tool in Moxfield",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.moxfield.com/decks/*"],
+      "run_at": "document_end",
+      "css": ["styles.css"],
+      "js": ["moxfield.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

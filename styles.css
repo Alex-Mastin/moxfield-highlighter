@@ -1,0 +1,23 @@
+.contains-results-feedback {
+  position: absolute;
+  top: 33px;
+  right: 58px;
+  color: #b0b0b0;
+  z-index: 3;
+  transition: opacity .2s ease-in;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.contains-error {
+  font-size: 12px !important;
+}
+
+.loading-spinner,
+.contains-error {
+  position: absolute;
+  top: 35px;
+  right: 27px;
+}
+
+
